@@ -1,0 +1,74 @@
+/* .app {
+  color: #353C4E;
+  background: #F0F2F4;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+*/
+
+.weather-icon {
+  height: 30px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.weather-details {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 30px;
+}
+
+img {
+  margin-left: 10px;
+}
+
+p {
+  margin-bottom: 10px;
+  font-size: 12px;
+  margin-top: 20px;
+  font-weight: bolder;
+}
+
+.select-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.select-wrapper select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-color: white;
+  padding: 8px 30px 8px 16px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  color: #2196F3;
+  cursor: pointer;
+}
+
+.select-wrapper select:focus {
+  outline: none;
+}
+
+/* Add the drop-down icon */
+.select-wrapper::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  pointer-events: none;
+  border-left: 4px solid transparent; /* Left border for the left side of the V */
+  border-right: 4px solid transparent; /* Right border for the right side of the V */
+  border-top: 4px solid #2196F3; /* Top border for the V, change color to blue */
+}
